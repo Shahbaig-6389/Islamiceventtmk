@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ali-e-Shan Jalsa Islah-e-Moashara · 11th December 2026</title>
+  <title>Aali-e-Shan Jalsa · 11th December 2026</title>
   <meta name="description" content="A non-profit statewide religious congregation dedicated to spiritual guidance, moral reformation, and community harmony across Karnataka." />
-  <meta property="og:title" content="Ali-e-Shan Jalsa Islah-e-Moashara" />
+  <meta property="og:title" content="Aali-e-Shan Jalsa" />
   <meta property="og:description" content="A non-profit statewide religious congregation dedicated to spiritual guidance, moral reformation, and community harmony across Karnataka." />
   <!--
     GITHUB PAGES READY SINGLE-FILE WEBSITE
@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Nastaliq+Urdu:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
+    html, body { width: 100%; max-width: 100%; overflow-x: clip; }
     body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
     .font-serif-display { font-family: 'Cormorant Garamond', Georgia, serif; }
     .font-urdu { font-family: 'Noto Nastaliq Urdu', serif; }
@@ -28,13 +29,16 @@
   </style>
 </head>
 <body class="bg-[#F8FAF8] text-[#111C17] antialiased">
-  <header class="sticky top-0 z-40 bg-[#084E39]/95 backdrop-blur border-b border-white/10 text-white">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-8">
-      <a href="#top" class="inline-flex items-center gap-3 font-serif-display text-xl font-bold tracking-tight whitespace-nowrap shrink-0">
-        <span class="h-10 w-10 rounded-md bg-white p-0.5 flex items-center justify-center shrink-0 overflow-hidden">
+  <header class="w-full sticky top-0 z-40 bg-[#084E39]/95 backdrop-blur border-b border-white/10 text-white">
+    <div class="max-w-6xl mx-auto px-3 sm:px-6 min-h-16 py-1.5 flex items-center justify-between gap-2 sm:gap-4 md:gap-8">
+      <a href="#top" class="inline-flex items-center gap-2 sm:gap-3 min-w-0 flex-1 md:flex-initial md:shrink-0">
+        <span class="h-9 w-9 sm:h-11 sm:w-11 rounded-md bg-white p-0.5 flex items-center justify-center shrink-0 overflow-hidden">
           <img id="nav-logo" src="" alt="Organization Logo" class="h-full w-full object-contain" />
         </span>
-        <span id="nav-org">Jamiat Ulama District Tumkur</span>
+        <span class="flex flex-col justify-center min-w-0">
+          <span class="font-serif-display text-[15px] sm:text-lg font-bold tracking-tight leading-tight truncate" id="nav-org">Jamiat Ulama District Tumkur</span>
+          <span class="font-urdu text-[11px] sm:text-sm text-[#E9F5BE] leading-[1.7] text-left truncate" dir="rtl" id="nav-urdu"></span>
+        </span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm text-[#D7E6DF]">
         <a href="#speaker" class="hover:text-white whitespace-nowrap shrink-0">Speaker</a>
@@ -42,58 +46,63 @@
         <a href="#live" class="hover:text-white whitespace-nowrap shrink-0">Live Stream</a>
         <a href="#publicity" class="hover:text-white whitespace-nowrap shrink-0">Publicity</a>
       </nav>
-      <a href="#live" class="px-4 py-2 text-xs font-semibold bg-[#C2DC62] text-[#063B2B] rounded-md hover:bg-[#d2ea78] whitespace-nowrap shrink-0">Watch Live</a>
+      <a href="#live" class="px-3 sm:px-4 py-2 text-xs font-semibold bg-[#C2DC62] text-[#063B2B] rounded-md hover:bg-[#d2ea78] whitespace-nowrap shrink-0">Watch Live</a>
     </div>
   </header>
 
-  <main id="top">
-    <section class="bg-[#084E39] text-white py-16 md:py-20 px-6">
-      <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
-        <div class="lg:col-span-6 space-y-6">
-          <p class="text-xs uppercase tracking-widest text-[#C2DC62]" id="hero-edition"></p>
-          <p class="font-urdu text-2xl md:text-3xl text-[#E8F5B6] leading-loose" dir="rtl" id="hero-urdu-org"></p>
-          <h1 class="font-serif-display text-4xl md:text-6xl font-bold leading-tight text-white" id="hero-title"></h1>
-          <p class="text-[#D7E6DF] text-base md:text-lg max-w-2xl leading-relaxed" id="hero-subtitle"></p>
-          <div class="pt-2 flex flex-wrap items-center gap-4">
-            <a href="#schedule" class="px-6 py-3 bg-[#C2DC62] text-[#063B2B] font-semibold text-sm rounded-md hover:bg-[#d2ea78]">View Event Schedule</a>
-            <a href="#live" class="px-6 py-3 border border-white/25 text-white font-medium text-sm rounded-md hover:bg-white/10">YouTube Live Stream</a>
+  <main id="top" class="w-full">
+    <section class="w-full bg-[#084E39] text-white py-10 md:py-20 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div class="lg:col-span-6 min-w-0 space-y-6">
+          <div class="text-center space-y-3 min-w-0">
+            <p class="text-xs uppercase tracking-widest text-[#C2DC62] break-words" id="hero-edition"></p>
+            <div class="font-urdu space-y-1 max-w-full break-words" dir="rtl" id="hero-urdu-title"></div>
+            <h1 class="font-serif-display leading-tight text-white flex flex-col items-center max-w-full">
+              <span class="text-[1.85rem] sm:text-5xl md:text-[3.9rem] font-extrabold text-white max-w-full break-words" id="hero-title"></span>
+              <span class="mt-1 text-2xl sm:text-5xl md:text-[3.5rem] font-medium text-[#E8F5B6] max-w-full break-words" id="hero-topic-bracket"></span>
+            </h1>
+            <p class="text-[#D7E6DF] text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed break-words" id="hero-subtitle"></p>
           </div>
-          <div class="pt-4 border-t border-white/15 grid grid-cols-4 gap-3 max-w-md font-mono-num" id="countdown-box"></div>
+          <div class="pt-2 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            <a href="#schedule" class="px-5 sm:px-6 py-3 bg-[#C2DC62] text-[#063B2B] font-semibold text-sm rounded-md hover:bg-[#d2ea78]">View Event Schedule</a>
+            <a href="#live" class="px-5 sm:px-6 py-3 border border-white/25 text-white font-medium text-sm rounded-md hover:bg-white/10">YouTube Live Stream</a>
+          </div>
+          <div class="pt-4 border-t border-white/15 grid grid-cols-4 gap-2 sm:gap-3 max-w-md mx-auto font-mono-num" id="countdown-box"></div>
         </div>
-        <div class="lg:col-span-6">
-          <div class="bg-[#063B2B] p-3 rounded-lg border border-white/15">
-            <picture>
+        <div class="lg:col-span-6 min-w-0 w-full">
+          <div class="bg-[#063B2B] p-2.5 sm:p-3 rounded-lg border border-white/15 w-full min-w-0">
+            <picture class="block w-full max-w-full min-w-0">
               <source id="hero-poster-desktop" media="(min-width: 1024px)" srcset="" />
-              <img id="hero-poster" src="" alt="Official Event Poster" class="w-full h-auto rounded object-contain" />
+              <img id="hero-poster" src="" alt="Official Event Poster" class="block w-full max-w-full h-auto rounded object-contain mx-auto" />
             </picture>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-white border-b border-emerald-950/10 py-5 px-6">
-      <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm" id="utility-ribbon"></div>
+    <section class="w-full bg-white border-b border-emerald-950/10 py-5 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm" id="utility-ribbon"></div>
     </section>
 
-    <section id="speaker" class="max-w-6xl mx-auto px-6 py-16">
-      <div class="grid lg:grid-cols-12 gap-12">
-        <div class="lg:col-span-5 space-y-4">
+    <section id="speaker" class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 min-w-0 space-y-4">
           <p class="text-xs uppercase tracking-widest text-[#084E39] font-semibold">Keynote Speaker</p>
-          <p class="font-urdu text-2xl text-[#084E39] leading-loose" dir="rtl" id="speaker-urdu"></p>
-          <h2 class="font-serif-display text-3xl md:text-4xl font-bold text-[#111C17]" id="speaker-name"></h2>
-          <p class="text-sm font-medium text-[#084E39]" id="speaker-honorific"></p>
-          <p class="text-sm text-[#4A5D54]" id="speaker-profession"></p>
-          <p class="text-sm text-[#4A5D54] leading-relaxed pt-2" id="speaker-bio"></p>
+          <p class="font-urdu text-2xl text-[#084E39] leading-loose break-words" dir="rtl" id="speaker-urdu"></p>
+          <h2 class="font-serif-display text-3xl md:text-4xl font-bold text-[#111C17] break-words" id="speaker-name"></h2>
+          <p class="text-sm font-medium text-[#084E39] break-words" id="speaker-honorific"></p>
+          <p class="text-sm text-[#4A5D54] break-words" id="speaker-profession"></p>
+          <p class="text-sm text-[#4A5D54] leading-relaxed pt-2 break-words" id="speaker-bio"></p>
           <a id="speaker-wiki-link" href="#" target="_blank" rel="noopener noreferrer" class="hidden inline-block pt-1 text-sm font-semibold text-[#084E39] underline underline-offset-4 hover:text-[#063B2B]">Read on Wikipedia</a>
         </div>
-        <div class="lg:col-span-7 bg-white border border-emerald-950/10 rounded-lg p-6 md:p-8">
+        <div class="lg:col-span-7 min-w-0 bg-white border border-emerald-950/10 rounded-lg p-5 sm:p-6 md:p-8">
           <h3 class="font-serif-display text-2xl font-bold mb-4 text-[#111C17]">Distinguished Scholarly Lineage &amp; Relations</h3>
           <dl class="divide-y divide-emerald-950/10 text-sm" id="relations-list"></dl>
         </div>
       </div>
     </section>
 
-    <section id="schedule" class="bg-white border-y border-emerald-950/10 py-16 px-6">
+    <section id="schedule" class="w-full bg-white border-y border-emerald-950/10 py-16 px-4 sm:px-6">
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
           <div>
@@ -144,7 +153,9 @@
   "organizationName": "Jamiat Ulama District Tumkur",
   "organizationUrdu": "جمعیۃ علماء ضلع ٹمکور",
   "editionLabel": "5th Time at the same place we are gathering for Jalsa-e-Islah",
-  "eventTitle": "Ali-e-Shan Jalsa Islah-e-Moashara",
+  "eventUrduTitle": "علیٰ شان جلسہ\nاجلاس عام اصلاح معاشرہ",
+  "eventTitle": "Aali-e-Shan Jalsa",
+  "eventTopicBracket": "(Islah-e-Moashara)",
   "eventSubtitle": "A non-profit statewide religious congregation dedicated to spiritual guidance, moral reformation, and community harmony across Karnataka.",
   "eventDateISO": "2026-12-11T18:15:00+05:30",
   "eventDateDisplay": "11th December 2026",
@@ -157,8 +168,8 @@
   "contactPhone": "+91 98450 00000",
   "contactEmail": "info@jamiattumkur.org",
   "logoImageUrl": "/assets/aistudio/Logo_-_jamaiyt-e-ulama-1_47acaa77.png",
-  "posterImageUrl": "/assets/aistudio/Islamic_Event_Tumkur_V-11Dec2026_43e7b6c5.png",
-  "mobilePosterImageUrl": "/assets/aistudio/Islamic_Event_Tumkur_H-11Dec2026_e0893d50.png",
+  "posterImageUrl": "/assets/aistudio/Islamic_Event_Tumkur_V-11Dec2026_43e7b6c5.png?v=3",
+  "mobilePosterImageUrl": "/assets/aistudio/Islamic_Event_Tumkur_V-11Dec2026_43e7b6c5.png?v=3",
   "youtubeUrl": "",
   "isLiveActive": false,
   "liveStreamNote": "Live YouTube conference broadcast activates on Friday, 11th December 2026 for viewers across Karnataka and beyond.",
@@ -250,12 +261,24 @@
     }
 
     document.getElementById('nav-org').textContent = EVENT_CONFIG.organizationName;
+    document.getElementById('nav-urdu').textContent = EVENT_CONFIG.organizationUrdu || '';
     if (EVENT_CONFIG.logoImageUrl) {
       document.getElementById('nav-logo').src = EVENT_CONFIG.logoImageUrl;
     }
     document.getElementById('hero-edition').textContent = EVENT_CONFIG.editionLabel;
-    document.getElementById('hero-urdu-org').textContent = EVENT_CONFIG.organizationUrdu;
+    const urduTitleEl = document.getElementById('hero-urdu-title');
+    urduTitleEl.innerHTML = '';
+    (EVENT_CONFIG.eventUrduTitle || '').split('\n').forEach((line, idx) => {
+      if (!line) return;
+      const p = document.createElement('p');
+      p.textContent = line;
+      p.className = idx === 0
+        ? 'text-xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-[2.15]'
+        : 'text-base sm:text-2xl font-medium text-[#E9F5BE] leading-[2.2]';
+      urduTitleEl.appendChild(p);
+    });
     document.getElementById('hero-title').textContent = EVENT_CONFIG.eventTitle;
+    document.getElementById('hero-topic-bracket').textContent = EVENT_CONFIG.eventTopicBracket || '';
     document.getElementById('hero-subtitle').textContent = EVENT_CONFIG.eventSubtitle;
     document.getElementById('hero-poster-desktop').srcset = EVENT_CONFIG.posterImageUrl;
     document.getElementById('hero-poster').src = EVENT_CONFIG.mobilePosterImageUrl || EVENT_CONFIG.posterImageUrl;
@@ -298,9 +321,9 @@
       }
       const items = activePeriod === 'All' ? EVENT_CONFIG.schedule : EVENT_CONFIG.schedule.filter(s => s.period === activePeriod);
       document.getElementById('schedule-rows').innerHTML = items.map(s =>
-        '<div class="py-5 grid md:grid-cols-12 gap-4 items-start">' +
-          '<div class="md:col-span-3 font-mono-num text-sm font-medium text-[#084E39]">' + s.time + ' – ' + s.endTime + '<div class="text-xs text-[#5A6D63] font-sans mt-0.5">' + s.period + ' · ' + s.location + '</div></div>' +
-          '<div class="md:col-span-9"><h3 class="text-lg font-semibold text-[#111C17]">' + s.title + '</h3><p class="text-sm text-[#084E39] font-medium mt-0.5">' + s.speaker + '</p><p class="text-sm text-[#4A5D54] mt-1.5">' + s.description + '</p></div>' +
+        '<div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-4 items-start">' +
+          '<div class="md:col-span-3 min-w-0 font-mono-num text-sm font-medium text-[#084E39]">' + s.time + ' – ' + s.endTime + '<div class="text-xs text-[#5A6D63] font-sans mt-0.5">' + s.period + ' · ' + s.location + '</div></div>' +
+          '<div class="md:col-span-9 min-w-0"><h3 class="text-lg font-semibold text-[#111C17] break-words">' + s.title + '</h3><p class="text-sm text-[#084E39] font-medium mt-0.5 break-words">' + s.speaker + '</p><p class="text-sm text-[#4A5D54] mt-1.5 break-words">' + s.description + '</p></div>' +
         '</div>'
       ).join('');
     }
